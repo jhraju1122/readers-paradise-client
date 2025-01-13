@@ -1,0 +1,50 @@
+[
+    {
+      "id": "001",
+      "name": "Classic Cheeseburger",
+      "recipe": "A juicy beef patty topped with melted cheese, lettuce, tomato, and onion.",
+      "image": "https://i.ibb.co.com/hsBnf9c/book3.jpg",
+      "category": "popular",
+      "price": "$8.99"
+    },
+    {
+      "id": "002",
+      "image": "https://i.ibb.co.com/hsBnf9c/book3.jpg",
+      "recipe": "A traditional Italian pizza with fresh mozzarella, basil, and tomato sauce.",
+      
+      "category": "popular",
+      "price": "$12.50"
+    },
+    {
+      "id": "003",
+      "name": "Caesar Salad",
+      "recipe": "Crisp romaine lettuce tossed with Caesar dressing, croutons, and parmesan cheese.",
+      "image": "https://i.ibb.co.com/hsBnf9c/book3.jpg",
+     "category": "popular",
+      "price": "$6.75"
+    },
+    {
+      "id": "004",
+      "name": "Chicken Tikka Masala",
+      "recipe": "Tender chicken pieces in a creamy tomato-based curry sauce.",
+      "image": "https://i.ibb.co.com/hsBnf9c/book3.jpg",
+      "category": "popular",
+      "price": "$14.00"
+    },
+    {
+      "id": "005",
+      "name": "Chocolate Lava Cake",
+      "recipe": "A warm and gooey chocolate cake with a molten center, served with vanilla ice cream.",
+      "image": "https://i.ibb.co.com/hsBnf9c/book3.jpg",
+      "category": "popular",
+      "price": "$7.25"
+    },
+    {
+      "id": "006",
+      "name": "Iced Caramel Latte",
+      "recipe": "Espresso blended with caramel syrup, milk, and ice, topped with whipped cream.",
+      "image": "https://i.ibb.co.com/hsBnf9c/book3.jpg",
+      "category": "popular",
+      "price": "$4.50"
+    }
+  ]

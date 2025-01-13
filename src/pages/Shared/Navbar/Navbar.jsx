@@ -1,17 +1,14 @@
+import { Link } from "react-router-dom";
+import logo from '../../../assets/img/logo-library.jpg'
  
 const Navbar = () => {
     const navOptions = <>
-     <li><a>Item 1</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
+     <Link className="mr-4"><a>Home</a></Link>
+    <Link  className="mr-4"><a> All Books</a></Link>
+    <Link><a className="mr-4">Borrowed Books</a></Link>
+    <Link to='/addbooks' className="mr-4"><a> Add Book</a></Link>
+    <Link to='/login'><a>Login</a></Link>
+    
     </>
     return (
         <>
@@ -39,7 +36,7 @@ const Navbar = () => {
 
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Reader's Paradise</a>
+    <a className="btn btn-ghost text-xl">Reader's Paradise <span><img className="w-[50px] h-[40px]" src={logo} alt="" /></span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1  text-xl">
@@ -47,7 +44,29 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="dropdown dropdown-end">
+      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar ">
+        <div className="w-10 rounded-full">
+          <img
+            alt="Tailwind CSS Navbar component"
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        </div>
+      </div>
+      <ul
+        tabIndex={0}
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        <Link>
+          <a className="justify-between text-black">
+            Profile
+            <span className="badge">New</span>
+          </a>
+        </Link>
+        <Link><a className="text-black">Settings</a></Link>
+        <Link><a className="text-black">Logout</a></Link>
+        <Link className="text-black" to='/register'><a>Register</a></Link>
+      </ul>
+    </div>
+  
   </div>
 </div> 
         </>
