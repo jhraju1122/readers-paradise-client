@@ -13,23 +13,25 @@ const Banner = () => {
               <Carousel>
                 <div>
                     <img src={book1} />
-                    <Link className="btn relative top-[-60px]">Book Details</Link>
+                    <Link to='/BookDetails' className="btn relative top-[-60px]">Book Details
+                    
+                    </Link>
                  </div>
                 <div>
                     <img src= {book2} />
-                    <Link className="btn relative top-[-60px]">Book Details</Link>
+                    <Link to='/BookDetails' className="btn relative top-[-60px]">Book Details</Link>
                 </div>
                 <div>
                     <img src={book3} />
-                    <Link className="btn relative top-[-60px]">Book Details</Link>
+                    <Link to='/BookDetails' className="btn relative top-[-60px]">Book Details</Link>
                 </div>
                 <div>
                     <img src={book4} />
-                    <Link className="btn relative top-[-60px]">Book Details</Link>
+                    <Link to='/BookDetails' className="btn relative top-[-60px]">Book Details</Link>
                 </div>
                 <div>
                     <img src={book5} />
-                    <Link className="btn relative top-[-60px]">Book Details</Link>
+                    <Link to='/BookDetails' className="btn relative top-[-60px]">Book Details</Link>
                 </div>
             </Carousel>
         

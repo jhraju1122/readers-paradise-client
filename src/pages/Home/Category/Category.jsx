@@ -25,19 +25,19 @@ const Category = () => {
       >
       
         <SwiperSlide><img src={horror2} alt="" /><h3 className='text-4xl uppercase text-center'>Jongol Barir dakura</h3>
-        <Link className="btn relative top-[-60px]">Book Details</Link>
+        <Link to='/BookDetails' className="btn relative top-[-60px]">Book Details</Link>
         </SwiperSlide>
         <SwiperSlide><img src={horror2} alt="" /><h3 className='text-4xl uppercase text-center'>Jongol Barir dakura</h3>
-        <Link className="btn relative top-[-60px]">Book Details</Link>
+        <Link to='/BookDetails' className="btn relative top-[-60px]">Book Details</Link>
         </SwiperSlide>
         <SwiperSlide><img src={horror3} alt="" /><h3 className='text-4xl uppercase text-center'>Jongol Barir dakura</h3>
-        <Link className="btn relative top-[-60px]">Book Details</Link>
+        <Link to='/BookDetails' className="btn relative top-[-60px]">Book Details</Link>
         </SwiperSlide>
         <SwiperSlide><img src={horror4} alt="" /><h3 className='text-4xl uppercase text-center'>Jongol Barir dakura</h3>
-        <Link className="btn relative top-[-60px]">Book Details</Link>
+        <Link to='/BookDetails'  className="btn relative top-[-60px]">Book Details</Link>
         </SwiperSlide>
         <SwiperSlide><img src={horror5} alt="" /><h3 className='text-4xl uppercase text-center'>Jongol Barir dakura</h3>
-        <Link className="btn relative top-[-60px]">Book Details</Link>
+        <Link to='/BookDetails' className="btn relative top-[-60px]">Book Details</Link>
         </SwiperSlide>
        
       </Swiper>
