@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../providers/AuthProvider';
  
 
  
@@ -7,6 +8,8 @@ import { Link } from 'react-router-dom';
 const Login = () => {
    const [registerError, setRegisterError] = useState('');
    const [success, setSuccess] = useState('');
+   const {signIn} = useContext(AuthContext);
+    
 
   const handleLogin = e =>{
     e.preventDefault();
@@ -14,8 +17,13 @@ const Login = () => {
     const password = e.target.password.value;
     const accepted = e.target.terms.checked;
     console.log(email, password, accepted);
+    signIn(email, password)
+    .then(result =>{
+      const user = result.user;
+      console.log(user);
+    })
 
-
+    
        //  password at least 6 characters
        if(password.length < 6){
         setRegisterError('password should be at least 6 characters or longer');

@@ -8,7 +8,7 @@ import Login from "../pages/Shared/Login/Login";
 import Register from "../pages/Shared/Register/Register";
 import ErrorPage from "../Errorpage/ErrorPage";
 import BookDetails from "../pages/BookDetails/BookDetails";
- 
+  
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -34,7 +34,8 @@ export const router = createBrowserRouter([
         {
             path: '/BookDetails',
             element: <BookDetails></BookDetails>
-        },
+        }
+        
        
          
       ]
