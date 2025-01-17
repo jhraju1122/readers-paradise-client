@@ -15,6 +15,21 @@ const AddBooks = () => {
      
         const addBook = {name, quantity, author, details, price, category, photo};
         console.log(addBook);
+         
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+            'content-type': 'application/json'
+            },
+            body: JSON.stringify(addBook)
+          })
+          .then(res => res.json())
+          .then(data =>{
+            console.log(data);
+          })
+
+
+
     }
 
     return (

@@ -21,9 +21,9 @@ const Navbar = () => {
     <Link to='/addbooks' className="mr-4"><a> Add Book</a></Link>
     {
       user ? <>
-      <button onClick={handleLogOut} className="btn btn-ghost">Logout</button>
+      <button onClick={handleLogOut} className="btn btn-ghost text-xl">Logout</button>
       </> : <>
-            <li> <Link to='/login'>Login</Link></li>
+            <li className="text-xl"> <Link to='/login'>Login</Link></li>
             </>
     }
     </>
