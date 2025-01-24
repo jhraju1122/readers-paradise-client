@@ -8,6 +8,8 @@ import Login from "../pages/Shared/Login/Login";
 import Register from "../pages/Shared/Register/Register";
 import ErrorPage from "../Errorpage/ErrorPage";
 import BookDetails from "../pages/BookDetails/BookDetails";
+import AllBooks from "../AllBooks/AllBooks";
+ 
   
 export const router = createBrowserRouter([
     {
@@ -22,6 +24,7 @@ export const router = createBrowserRouter([
         {
             path: '/addbooks',
             element: <AddBooks></AddBooks>
+            
         },
         {
             path: '/login',
@@ -34,6 +37,12 @@ export const router = createBrowserRouter([
         {
             path: '/BookDetails',
             element: <BookDetails></BookDetails>
+        },
+        {
+            path: '/allbooks',
+            element:  <AllBooks></AllBooks>,
+            loader: () => fetch('http://localhost:5000/users')
+
         }
         
        

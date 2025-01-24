@@ -21,7 +21,7 @@ const AddBooks = () => {
             headers: {
             'content-type': 'application/json'
             },
-            body: JSON.stringify(addBook)
+            body: JSON.stringify(addBook) 
           })
           .then(res => res.json())
           .then(data =>{
@@ -35,6 +35,7 @@ const AddBooks = () => {
     return (
       <div className="bg-[#F4F3F0] p-24">
       <h1 className="mb-5 text-slate-400 text-3xl font-extrabold">add a Book</h1>
+       
       <form onSubmit={handleAddBook} >
          {/* form name and Quantity row  */}
       <div className="md:flex w-[100%] justify-center mb-3 gap-3">

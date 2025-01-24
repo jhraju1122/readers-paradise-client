@@ -16,7 +16,7 @@ const Navbar = () => {
 
     const navOptions = <>
      <Link className="mr-4"><a>Home</a></Link>
-    <Link  className="mr-4"><a> All Books</a></Link>
+    <Link to='/allbooks' className="mr-4"><a> All Books</a></Link>
     <Link><a className="mr-4">Borrowed Books</a></Link>
     <Link to='/addbooks' className="mr-4"><a> Add Book</a></Link>
     {
@@ -48,7 +48,7 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl text-white">
        {navOptions}
 
       </ul>
@@ -71,7 +71,7 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-white">
         <Link>
           <a className="justify-between text-black">
             Profile

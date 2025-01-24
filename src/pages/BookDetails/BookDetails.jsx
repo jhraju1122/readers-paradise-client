@@ -1,8 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 
 const BookDetails = () => {
+
+  
     return (
+       <div>
+        <h1 className='text-center text-2xl font-bold mb-20 mt-12 '>Book Details</h1>
         <div className="card lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img
@@ -32,6 +35,7 @@ const BookDetails = () => {
           </div>
         </div>
       </div>
+       </div>
     );
 };
 
