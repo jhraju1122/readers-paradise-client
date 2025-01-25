@@ -1,19 +1,22 @@
-import { useLoaderData } from "react-router-dom";
-  
+ import { useLoaderData } from 'react-router-dom';
+import NewAddBooks from '../pages/BookCard/NewAddBooks';
+
 const AllBooks = () => {
-    const users = useLoaderData();
-    const userCount = Array.isArray(users) ? users.length : 0;
+     
+    const books = useLoaderData();
+
 
     return (
-        <div>
-            <h2>Books Available</h2>
-            <h2>{userCount}</h2>
-
-            <div>
-                {
-                    users.map(user => <p key={user._id}>{user.name} : {user.category}</p>)
-                }
-            </div>
+        <div className='grid grid-cols-2'>
+         
+            {
+                books.map((book) => (
+                    <NewAddBooks
+                    key={book.id}
+                    book={book}
+                    ></NewAddBooks>
+                ))
+            }
         </div>
     );
 };

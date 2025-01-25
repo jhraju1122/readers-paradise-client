@@ -9,7 +9,7 @@
     },
     {
       "id": "002",
-      "image": "https://i.ibb.co.com/C1kCQyp/top-Rated1.jpg",
+      "image": "https://i.ibb.co.com/r0KN5Pp/Top2.jpg",
       "recipe": "A traditional Italian pizza with fresh mozzarella, basil, and tomato sauce.",
       
       "category": "popular",
@@ -19,7 +19,7 @@
       "id": "003",
       "name": "Caesar Salad",
       "recipe": "Crisp romaine lettuce tossed with Caesar dressing, croutons, and parmesan cheese.",
-      "image": "https://i.ibb.co.com/C1kCQyp/top-Rated1.jpg",
+      "image": "https://i.ibb.co.com/d469fPh/top6.jpg",
      "category": "popular",
       "price": "$6.75"
     },
@@ -27,7 +27,7 @@
       "id": "004",
       "name": "Chicken Tikka Masala",
       "recipe": "Tender chicken pieces in a creamy tomato-based curry sauce.",
-      "image": "https://i.ibb.co.com/C1kCQyp/top-Rated1.jpg",
+      "image": "https://i.ibb.co.com/d469fPh/top6.jpg",
       "category": "popular",
       "price": "$14.00"
     },
